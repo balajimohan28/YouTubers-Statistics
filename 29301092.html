@@ -1,0 +1,45 @@
+<html>
+	<head>
+        <title>29301092 Assignment4</title>
+		<link rel="stylesheet" type="text/css" href="29301092.css">
+    </head>
+	<body>
+        <h1 style="text-align:center;">YouTubers Analysis</h1>
+        <h3 style="text-align:center;">How YouTubers make money?</h3>
+        <p><span><label for="selectButton">Select here to see the YouTube analysis for different countries</label></span>
+        <select id="selectButton"></select>
+        <div id="bubblechart">
+        <p>Categories in bubbles</p>
+        <h2>Select the category to see their top ten channels</h2>
+        </div>
+        <div id="barChart">
+        <p>Top 10 trending channels</p>
+        <h2>Select the channel to see how much they earned</h2>
+        </div>
+        <div id="linegraph">
+        <p>Monthly income report</p>
+        <h2>Below graph shows the amount earned for channel selected from left bars</h2>
+        </div>
+        
+        <div id="everything">
+		<h1>Which video trends the most?</h1>
+		<h2>Top videos which trends the most on YouTube with their number of trending days</h2>	
+        <h2>Below videos are filtered as per the selected country and its category*</h2>
+		<div id="chart"></div>
+		<h2>Data taken from <a href="http://www.kaggle.com/">kaggle.com</a></h2>
+	    </div>
+        <div id="dashboard_instruction">
+		<p>How do I work?</p>
+		<h2>Since, I am a cross-filter dashboard, all the charts are inter-linked with each other</h2>	
+        <h2>Don't search for filter button, my shapes themselves are filters ;)</h2>
+        <h2>Please be gentle with selecting filters, afterall I am made in D3 not python to show you the results spontaneously</h2>
+        <h2>Keep calm and wait for the most trended videos after selecting the categories and channels, since streaming consumes few seconds</h2>
+        <h2>And please stop looking for filters in monthly income chart, that's just a static report for the channel income</h2>
+        <h2>By default, the top 10 trending bar and annaual income report are already filtered to show US' Film & Animation categor and HBO channel, as I watch HBO a lot :P</h2>
+	    </div>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+        <script type="text/javascript" src="29301092.js"></script>
+    </body>
+</html>

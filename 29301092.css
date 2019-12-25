@@ -1,0 +1,160 @@
+/*referred from http://bl.ocks.org/charlesdguthrie/11356441*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: inherit;
+}
+
+h1 {
+	font-size:150%;
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+h2 {
+	font-size: 12px;
+	font-style: italic;
+	color: gray;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+h3 {
+	font-size: 16px;
+	font-style: italic;
+	color: gray;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+#chart{
+	width:600px;
+	height:400px;
+}
+.bar{
+	fill:#DFF6FF;
+}
+text.label{
+	fill: #777777;
+	color: #777777;
+	font-size: 20px;
+	font-weight: bold;
+}
+text.category{
+	fill: #666666;
+	font-size: 14px;
+}
+#select_text{
+    position: absolute;
+    top: 46.5px;
+    left: 72px;
+    width: 480px;
+    height: 10px;
+    background: white;
+}
+#dashboard_instruction{
+    position: absolute;
+    top: 510px;
+    left: 25px;
+    width: 400px;
+    height: 400px;
+    background: white
+    transform: translate(-50%, -50%);
+}
+#everything{
+    position: absolute;
+    top: 400px;
+    left: 435px;
+    width: 800px;
+    height: 570px;
+    background: white
+    transform: translate(-50%, -50%);
+}
+#bubblechart {
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    width: 380px;
+    height: 470px;
+    background: white;
+}
+
+#barChart {
+    position: absolute;
+    top: 100px;
+    left: 385px;
+    width: 380px;
+    height: 570px;
+    background: white;
+}
+
+#linegraph {
+    position: absolute;
+    top: 100px;
+    left: 765px;
+    width: 380px;
+    height: 350px;
+    background: white;
+}
+
+
+circle:hover{
+        fill: darkgrey;
+      }
+
+/* referred from http://bl.ocks.org/d3noob/a22c42db65eb00d4e369 */
+/*bubble chart*/
+div_bubble.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 110px;					
+    height: 30px;	
+    padding: 2px;				
+    font: 10px sans-serif;		
+    background: white;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+
+
+/*bar chart*/
+/*
+.bar:hover {
+  fill: orangered ;
+}
+*/
+
+.x.axis path {
+  display: none;
+}
+div_bar.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 100px;					
+    height: 25px;	
+    padding: 2px;				
+    font: 10px sans-serif;		
+    background: white;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
